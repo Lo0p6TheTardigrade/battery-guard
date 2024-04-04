@@ -1,0 +1,103 @@
+.rotate-animate {
+  animation: rotate_180 0.3s ease-in-out both;
+}
+.rotate-animate-reverse {
+  animation: rotate_90_reverse 0.3s ease-in-out both;
+}
+
+.iframe-display {
+  @include flex(column, nowrap, initial, initial, initial);
+  @include width-height(100%, 100%);
+}
+.iframe-not-display {
+  display: none;
+}
+
+.viewer-box {
+  @include flex(column, nowrap, initial, initial, initial);
+  @include width-height(100%, 400px);
+}
+
+.common-class-wrapper {
+  @include flex(column, nowrap, initial, center, initial);
+  box-shadow: map-get($box-shadow, shadow__card) inset;
+  animation: opacityAnimation 1s ease-in-out both;
+}
+
+.decoration-box {
+  padding: 18px 0;
+  display: flex;
+  border: solid 2px transparent;
+  border-radius: 6px;
+  background-color: map-get($color-map, white__normal);
+  box-shadow: map-get($box-shadow, shadow__card);
+  @include width-height(390px, auto);
+  cursor: pointer;
+  @media screen and (min-width: 675px) {
+    @include width-height(291px, 291px);
+  }
+  h4 {
+    font-weight: 500;
+  }
+  &:hover {
+    border: solid 2px map-get($color-map, red__pink__identity);
+    .text-color {
+      transition: 0.6s ease-in-out;
+    }
+  }
+}
+
+.text-color {
+  padding: 3px 18px;
+  outline: solid 1px map-get($color-map, white__normal);
+  border: solid 2px map-get($color-map, grey__dark);
+  border-radius: 18px;
+  @include flex(row, nowrap, center, center, initial);
+  background-color: map-get($color-map, grey__light);
+  box-shadow: map-get($box-shadow, shadow__card) inset;
+  @include width-height(100%, 69px);
+  @media screen and (min-width: 675px) {
+    @include width-height(72%, 54px);
+  }
+}
+
+.dot-colored {
+  background-color: map-get($color-map_2, Georgia_Peach);
+}
+
+.rotate-element {
+  transform: rotateZ(180deg);
+}
+.rotate-element-reverse {
+  transform: rotateZ(-180deg);
+}
+
+.unselected-element {
+  font-weight: 300 !important;
+}
+
+.rotate-infinite {
+  animation: rotate-infinite 2s ease-in-out both infinite;
+}
+
+.animate-action {
+  animation: rotate 2s ease-in-out both;
+}
+.animate-action2 {
+  animation: rotate 2s ease-in-out both;
+}
+
+.animate-translate {
+  animation: translate 2s ease-in-out both;
+}
+
+.animate-opacity {
+  animation: opacityAnimation 1s ease-in-out both;
+}
+
+.box {
+  outline: solid 3px map-get($color-map, white__normal);
+  border: solid 3px map-get($color-map, grey__dark);
+  border-radius: 33px;
+  box-shadow: map-get($box-shadow, shadow__card);
+}
