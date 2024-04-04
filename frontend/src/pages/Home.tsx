@@ -1,9 +1,15 @@
 import React from 'react';
+import Landing from '../components/Landing';
 
 type Props = {};
 
 const Home = (props: Props) => {
-  return <div>Home</div>;
+  return (
+    <div className="home-page-container">
+      Home
+      <Landing />
+    </div>
+  );
 };
 
 export default Home;
