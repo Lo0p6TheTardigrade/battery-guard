@@ -1,9 +1,17 @@
 import React from 'react';
+import { Props } from '../types';
 
-type Props = {};
-
-const Img = (props: Props) => {
-  return <div>Img</div>;
+const Img = ({ src, alt }: Props) => {
+  return (
+    <div className="image-component-container">
+      Img{' '}
+      <img
+        src=""
+        alt={alt}
+        className=""
+      />{' '}
+    </div>
+  );
 };
 
 export default Img;
