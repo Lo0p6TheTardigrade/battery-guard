@@ -16,7 +16,7 @@ const Landing = () => {
             <ol className="landing-info-text-list">
               <li className="landing-info-text-item">
                 Le journal
-                <p className="landing-info-text">Tenir un journal sur l'état de vos Lipo qui ajoute un point de sécurité.</p>
+                <p className="landing-info-text">Tenir un journal sur l'état de vos Lipo ce qui ajoute un point de tranquillité.</p>
               </li>
               <li className="landing-info-text-item">
                 Le partage
