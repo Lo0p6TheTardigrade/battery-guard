@@ -123,8 +123,8 @@ export type Props = {
   state?: boolean;
   tag?: any;
   id?: string;
-  classX?: string | (() => string);
-  src?: ReactElement<any, any>;
+  classX?: string;
+  src?: string;
   href?: string;
   link?: string;
   to?: string;
