@@ -1,5 +1,5 @@
 // @flow
-import { ReactElement, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 export interface Behavior_Custom_Interface {
   basic: boolean;
