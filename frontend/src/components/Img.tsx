@@ -1,14 +1,14 @@
 import React from 'react';
 import { Props } from '../types';
 
-const Img = ({ src, alt }: Props) => {
+const Img = ({ src, alt, classX }: Props) => {
   return (
     <div className="image-component-container">
       Img{' '}
       <img
-        src=""
+        src={src}
         alt={alt}
-        className=""
+        className={classX}
       />{' '}
     </div>
   );
